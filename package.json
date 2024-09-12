@@ -5,7 +5,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "kartik <kartik200421@gmail.com>",
   "license": "ISC",
   "description": "",
   "dependencies": {
@@ -14,5 +14,6 @@
   },
   "devDependencies": {
     "@types/node": "^22.5.4"
-  }
+  },
+  "repository": "git@github.com:kartik-212004/Migration-Files.git"
 }
