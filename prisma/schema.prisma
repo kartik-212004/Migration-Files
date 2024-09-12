@@ -4,6 +4,8 @@
 // Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
+// psql -h localhost -p 5432  -U postgres -d database 
+
 generator client {
   provider = "prisma-client-js"
 }
@@ -21,8 +23,6 @@ model User {
 
 model Post {
   id         Int        @id @default(autoincrement())
-  createdAt  DateTime   @default(now())
-  updatedAt  DateTime   @updatedAt
   title      String
   published  Boolean    @default(false)
   author     User       @relation(fields: [authorId], references: [id])
